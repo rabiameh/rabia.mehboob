@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color:#0f0f0ffa ;
+    color: #fff;
+    
+    }
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/images/download.jpeg);
+    background-size:cover;
+    background-position:center;
+   
+
+    
+
+}
+.container {
+    padding:10px 10%;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width:40px;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+    transition:0.5s;
+
+}
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text-h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text-h1,span{
+      
+    color: #ff004f;
+}
+
+
+
+
+
+#about{
+    padding: 60px 0;
+    color:#e8e0e2;
+   
+    
+
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #280bcf;
+    @font-face {
+    font-family:Edu ;
+    src:url(Fonts/EduAUVICWANTGuides-Bold.ttf);
+           
+    
+    }
+    
+    
+
+
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    
+    
+
+}
+.about-col-1{
+    flex-basis:35%;
+    
+
+}
+ .row img{
+    width: 200px;
+    border-radius: 30px;
+    height: 300px;
+    border-color: #111013fa;
+    border-style: double;
+    margin-left: auto;
+}
+.about-col-2{
+    flex-basis: 50%;
+    flex-direction:row;
+
+}
+.sub-title{
+
+  font-size:20px; 
+  font-weight: 50; 
+  color: #e41010;
+  font-style: italic;
+  position:relative;
+
+  font-family:Edu ;
+  src:url(Fonts/EduAUVICWANTGuides-SemiBold.ttf);
+
+
+  
+ 
+    }
+
+
+
+.tab-titles{
+    display:grid;
+    margin:20px 0 40px;
+    color: #565553fa;
+    font-size: large;
+
+   
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position:relative;
+    color: #e111e1fa;
+    background-color: #c3bbbb;
+    
+    border: #5013dffa;
+    @font-face {
+        font-family:Edu;
+        src:url(Fonts/EduAUVICWANTGuides-Regular.ttf)
+    }
+    
+    
+
+
+}
+.tab-links::after{
+    content:'' ;
+    width: 0px;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-content ul li{
+    list-style:none;
+    margin:10px 0;
+
+}
+.tab-contents ul li span{
+    color: #d21313;
+    font-size:14px;
+}
+.tab-contents {
+    display:flex;
+}
+.tab-conten.active-tab{
+    display:block;
+}
+
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+nav {
+    background: #222;
+    padding: 0 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu,
+.submenu {   
+    list-style-type: none;
+}
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+.item {
+    padding: 10px;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+
+
+ .box{
+    width: 200px;
+    height: 100px;
+    border:1px solid black;
+    padding: 10px;
+    margin:10px;
+    background-color: #c3bbbb;
+ }
+  img {
+    width: 200px;
+    height:100px;
+    border: 5px solid rgb(10, 22, 243);
+    border-style: dotted;
+    margin:10px;
+    
+
+ }
+ p {
+    font-size:smaller;
+    font-style: oblique;
+    color: #ef0c0c;
+
+ }
+ .img-gallery{
+    width:100%;
+    margin:100px auto 50px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+ }
+
+.img-gallery img{
+    width: 80%;
+    cursor:pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius:20px ;
+    box-shadow:0.32px ;
+
+
+
+
+
+

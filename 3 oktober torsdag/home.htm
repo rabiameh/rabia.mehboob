@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+          @media screen and (max-width:481px) {
+            #main,#subnav {
+                float:left;
+                padding:0;
+                width:94%;
+                margin:3;
+
+            }
+            
+          }  
+        
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:initial;
+            background-color: rgb(14, 124, 234);
+            font-family:'Courier New', Courier, monospace;
+
+            
+
+        }
+        .hero,img{
+            border-radius: 50%;
+        
+        }
+        
+        ul{
+            font-style: italic;
+            
+            flex:1;
+            text-align: right;
+            font-size: 25px;
+
+        }
+        ul li{
+            list-style:none;
+            display: inline-block;
+            margin:0 60px;
+        }
+        ul li a{
+            text-decoration: dashed;
+            color: rgb(7, 7, 8);
+            padding: 0 10px;
+            position:relative;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        ul li a::after{
+            content: "";
+            width: 0;
+            height:10px;
+            background-color: rgb(223, 17, 110);
+            position: absolute;
+            transform: translateX(-50%);
+            top:-55px;
+            transition: 0.5s;
+
+        }
+        ul li a:hover::after{
+            width: 100%;
+
+        }
+        .navbar-icons img{
+            height:300px;
+            width: 300px;
+            margin-left:100px;
+            cursor:pointer;
+            position:relative;
+            border-radius: 50%;
+
+        }
+        .navbar-icons{
+            margin-left:40px;
+        }
+        .banner{
+            display:flexbox;
+            margin-top: 80px;
+            position:center ;
+
+        }
+        .left-col,right-col{
+            flex-basis: 50%;
+        }
+        p {
+            font-size: 10px;
+            font-style: normal;
+            color: rgb(232, 17, 17);
+            text-align: right;
+            background-image:url(images/images/download (1).jpeg);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/images/download.jpg" class="logo">
+            <ul>
+                
+                <li><a href="home.htm"> home</a></li>
+                <li><a href="about.htm">about</a></li>
+                <li><a href="services.htm">services</a></li>
+                <li><a href="portfolio.htm">portfolio</a></li>
+                <li><a href="contact.htm">contact</a></li>
+        
+            </ul>
+        </nav>
+        <br>
+        <p style="background-image: url('img_girl.jpg');"></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci fugit eius odit sint qui neque quia ullam reiciendis odio praesentium suscipit, cum porro cumque ex voluptatibus dicta nihil inventore?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis maiores, libero, qui ipsam aliquid illum dolore reprehenderit ipsum quia velit debitis quisquam harum eum nihil error hic ut. Saepe?</p>
+        <div class="navbar-icons">
+            <img src="images/images/download (1).jpeg" alt="">
+            <div class="banner">
+                
+                <div class="left-col">
+                    <div class="right-col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam porro magni sapiente aliquam consequatur nam quisquam, esse doloribus mollitia molestiae at quasi blanditiis nulla et laborum repellendus sed autem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed mollitia distinctio neque! Quasi corporis vero necessitatibus quos nulla! Quis eos at esse blanditiis fugiat qui minus distinctio sequi rem.</p>
+                        <img src="images/images/download (1).jpeg" alt="">
+                        
+                </div>
+
+            </div>
+        </div>
+
+      </div>  
+    </div>
+    
+</body>
+</html>
