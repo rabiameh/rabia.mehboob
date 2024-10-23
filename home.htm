@@ -7,151 +7,158 @@
     <link rel="stylesheet" href="style.css">
    
     <style>
-    
-    @media only screen and (max-width: 600px) {
-            #main,#subnav {
-                float:left;
-                padding:0;
-                width: 50%;;
-                margin:1;
-
-            }
-            
-          }  
-        
-        *{
-            margin:0;
+        /* Global Reset */
+        * {
+            margin: 0;
             padding: 0;
-            
-            box-sizing:border-box;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Body Styles */
+        body {
             background-color: rgb(14, 124, 234);
-            font-family:'Courier New', Courier, monospace;
+        }
 
-            
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
 
-        }
-        .btn {
-  background-color: #ff0000; /* Red background */
-  color: #ffffff; /* White text */
-}
-        .hero,img{
-            border-radius: 50%;
-            
-        
-        }
-        
-        ul{
-            font-style: italic;
-            
-            flex:1;
-            text-align: center;
-            font-size: 30px;
+            nav ul {
+                flex-direction: column;
+            }
 
+            .banner {
+                flex-direction: column;
+            }
+
+            .left-col, .right-col {
+                flex-basis: 100%;
+            }
+
+            .navbar-icons img {
+                height: 150px;
+                width: 100%;
+            }
+
+            .hero {
+                width: 100%;
+            }
+
+            #main, #subnav {
+                width: 100%;
+            }
         }
-        ul li{
-            list-style:none;
-            display: inline-block;
-            margin:0 60px;
+
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
         }
-        ul li a{
-            text-decoration: dashed;
-            color: rgb(7, 7, 8);
-            padding: 0 10px;
-            position:relative;
-            font-size: 12px;
+
+        .logo {
+            width: 100px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
             font-weight: 500;
+            position: relative;
         }
-        ul li a::after{
-            content: "";
-            width: 0;
-            height:10px;
-            background-color: rgb(223, 17, 110);
-            position: absolute;
-            transform: translateX(-50%);
-            top:-55px;
-            transition: 0.5s;
 
+        ul li a:hover {
+            color: rgb(223, 17, 110);
         }
-        ul li a:hover::after{
-            width: 100%;
 
-        }
-        .navbar-icons img{
-            height:200px;
-            width: 100%;
-            
-            cursor:pointer;
-            position:relative;
+        .navbar-icons img {
+            height: 100px;
+            width: 25%;
             border-radius: 50%;
+            cursor: pointer;
+            border-color: aqua;
+        }
 
+        /* Banner */
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
         }
-        .navbar-icons{
-            margin-left:40px;
-        }
-        .banner{
-            display:flexbox;
-            margin-top: 80px;
-            position:center ;
 
-        }
-        .left-col,right-col{
+        .left-col, .right-col {
             flex-basis: 50%;
         }
-        p {
-            font-size: 10px;
-            font-style: normal;
-            color: rgb(232, 17, 17);
-            text-align: right;
-            background-image:url(images/images/download (1).jpeg);
 
+        .right-col img {
+            width: 100%;
+            height: auto;
+            border-color: rgb(15, 15, 15);
         }
-        
 
-        
+        p {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .btn {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <nav>
-            <img src="images/images/download.jpg" class="logo">
+            <img src="images/images/download.jpg" class="logo" alt="Logo">
             <ul>
-                
-                <li><a href="home.htm"> home</a></li>
-                <li><a href="about.htm">about</a></li>
-                <li><a href="services.htm">services</a></li>
-                <li><a href="portfolio.htm">portfolio</a></li>
-                <li><a href="contact.htm">contact</a></li>
-        
+                <li><a href="home.htm">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="portfolio.htm">Portfolio</a></li>
+                <li><a href="contact.htm">Contact</a></li>
             </ul>
         </nav>
-        <br>
-        <p style="background-image: url('img_girl.jpg');"></p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci fugit eius odit sint qui neque quia ullam reiciendis odio praesentium suscipit, cum porro cumque ex voluptatibus dicta nihil inventore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facilis maiores, libero, qui ipsam aliquid illum dolore reprehenderit ipsum quia velit debitis quisquam harum eum nihil error hic ut. Saepe?</p>
-        <div class="navbar-icons">
-            <img src="images/images/download (1).jpeg" alt="">
-            <div class="banner">
-                
-                <div class="left-col">
-                    <div class="right-col">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam porro magni sapiente aliquam consequatur nam quisquam, esse doloribus mollitia molestiae at quasi blanditiis nulla et laborum repellendus sed autem.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed mollitia distinctio neque! Quasi corporis vero necessitatibus quos nulla! Quis eos at esse blanditiis fugiat qui minus distinctio sequi rem.</p>
-                        <img src="images/images/download (1).jpeg" alt="">
-                        
-                </div>
 
+        <div class="navbar-icons">
+            <img src="https://img.freepik.com/free-photo/beautiful-floral-wallpaper_23-2150705573.jpg" alt="profile image">
+        </div>
+
+        <div class="banner">
+            <div class="left-col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam porro magni sapiente aliquam consequatur nam quisquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis vero necessitatibus quos nulla! Quis eos at esse blanditiis fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugiat distinctio, in deserunt tempora cupiditate iusto cum labore? Possimus ut temporibus odio eveniet non vero veniam expedita quia voluptatum! Reiciendis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, esse. Praesentium incidunt nesciunt unde! Suscipit quos, doloremque tempora repellat totam fuga voluptatibus asperiores blanditiis, molestiae ducimus illum quasi perferendis non.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum, dolore incidunt autem laudantium nihil harum aperiam, reiciendis cupiditate asperiores, fugiat soluta nobis? Tempore quidem quam cumque perspiciatis. Nisi, pariatur!</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam itaque, sunt deserunt ab facere, quidem nulla necessitatibus assumenda magnam repellat aliquid vitae nostrum dolorum ipsa eius quia fuga doloribus vero.</p>
+            </div>
+
+            <div class="right-col">
+                <img src="images/images/download (1).jpeg" alt="Banner Image">
             </div>
         </div>
 
-      </div>  
+        <button class="btn btn-success">Success</button>
     </div>
-    
-2
-3
-<button class= "btn btn-success">
-   Success
-</button>
-   
-        
 </body>
 </html>
+
+
