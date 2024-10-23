@@ -14,10 +14,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
 </head>
+<style>
+    .container {
+    padding:10px 10%;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width:90px;
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+    transition:0.5s;
+
+}
+nav ul li a:hover::after {
+    width: 100%;}
+    svg{
+        width: 30px;
+    }
+   
+    
+</style>
 <body>
+    <div id="header">
+        <div class="container">
+        
+<nav>
+    <img src="images/images/download.jpg" class="logo">
+    <ul>
+        
+        <li><a href="home.htm"> home</a></li>
+        <li><a href="about.htm">about</a></li>
+        <li><a href="services.htm">services</a></li>
+        <li><a href="portfolio.htm">portfolio</a></li>
+        <li><a href="contact.htm">contact</a></li>
+
+    </ul>
+</nav>
    
     <h1 style="color: blue;"> Form and services</h1>
     <h2 style="color: blueviolet;background-color: black;font-style: oblique;">services for credit card</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+      </svg>
+      
     
     
 
